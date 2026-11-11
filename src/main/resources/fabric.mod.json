@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "crosshaireditor",
+  "version": "${version}",
+  "name": "Crosshair Editor",
+  "description": "Eigenes Fadenkreuz (Taste K) und Hit-Distanz-HUD (Taste J).",
+  "authors": [
+    "C20Z"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "de.c20z.crosshair.CrosshairEditorClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "mixins": [
+    "crosshaireditor.client.mixins.json"
+  ]
+}
